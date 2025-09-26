@@ -1,0 +1,29 @@
+{
+  "name": "school-health-ebook",
+  "version": "1.0.0",
+  "description": "كتاب تفاعلي عن الصحة المدرسية",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish"
+  },
+  "author": "bio.cop@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.9.0",
+    "@electron-forge/maker-wix": "^7.9.0",
+    "electron": "^38.1.2"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-wix"
+        }
+      ]
+    }
+  }
+}
